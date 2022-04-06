@@ -1,0 +1,25 @@
+
+.transparent{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+input {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+input :valid{
+    background-color: rgb(198, 198, 159);
+}
+
+input :invalid{
+    background-color: white ;
+}
+
+
