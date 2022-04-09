@@ -10,16 +10,10 @@
 }
 
 input {
-    margin-left: 1em;
-    margin-top: 1em;
+    margin-left: 4em;
+    margin-top: 2em;
+    
 }
 
-input :valid{
-    background-color: rgb(198, 198, 159);
-}
-
-input :invalid{
-    background-color: white ;
-}
 
 

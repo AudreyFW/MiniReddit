@@ -1,20 +1,17 @@
 
 body{
-  background-color: rgb(237, 237, 234);
-
+  background-color: black;
 }
 
 .App-header {
   justify-content: center;  
   word-spacing: 0.2em;
-  padding: 0.001em;
   font-size: 14px;
-  color: 	#FF8b60;
-  background-color: rgba(245, 245, 220, 0.678);
+  color: 	#d8450f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   position: relative;
-  border-bottom: solid rgba(0, 0, 0, 0.475);
+  border-bottom: solid #d0420f89;
 }
 
 aside {
@@ -22,11 +19,11 @@ aside {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float:right;
   padding: 1em;
-  background-color: #cebfaa;
+  background-color: #9185768a;
 }
 
 aside h2 {
   font-size:larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  color:#d8450fd9
 }
