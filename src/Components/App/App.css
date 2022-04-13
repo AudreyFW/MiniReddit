@@ -1,0 +1,46 @@
+
+body{
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif  ;
+}
+
+h1 {
+  background: rgb(244, 241, 241);
+  color:#f24507ee;
+  padding: 0.5em;
+  margin-top: 0.3em;
+}
+
+
+#user{
+  max-width: 24px; 
+  max-height: 24px;
+  margin: 1em;
+  float: right;
+}
+
+.input{
+  border-radius: 24px;
+  border: 0.5px solid #f2460761;
+  font-size: 10px;
+  padding: 4px 4px;
+  margin: 2em;
+  cursor: pointer;
+  float: left;
+}
+
+.search-button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 1em;
+  margin: 0.5em;
+  max-width: 24px; 
+  max-height: 24px;
+
+}
+
+.refresh{
+  height: 20px;
+  width:20px;
+}

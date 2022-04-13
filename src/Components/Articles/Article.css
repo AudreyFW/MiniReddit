@@ -1,11 +1,27 @@
 article{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin: 3em;
+    font-size: 13px;
+    margin: 2em;
+    padding: 2em;
+    background-color: #6f90803a;
+    border-radius: 0.2rem;
+    display: inline-block;
+    max-width: auto;
 }
 
 a{
-    color: #d8cdc8d7;
-    position: relative;
+    color:rgba(255, 255, 255, 0.838);
+    font-size: 16px;
+}
+
+ p{
+    color: rgb(213, 206, 206);
+    font-size: 14px;
+    align-content: center;
+    
+}
+
+.author{
+    color: grey
 }
 

@@ -1,16 +1,13 @@
-
 import './App.css';
-import LogIn from './Components/Account/LogIn'
-import SearchBar from './Components/SearchBar/searchBar'
 import {React, useState, useEffect} from 'react';
-import Article from './Components/Articles/Article';
-import Images from './Components/images/images';
+import Article from '../Articles/Article';
+import refresh from '../../pngegg.png';
+import user from '../../user.png';
 
 
 function App() {
   const [articles, setArticles]=useState([]);
   const [subreddit, setSubreddit]=useState('Reddit');
-  const [images, setImages]=useState([]);
 
   useEffect(()=>{
     fetch('https://www.reddit.com/r/'+subreddit+'.json').then(res=>{
@@ -25,25 +22,31 @@ function App() {
         }
       })
     })
+
   },[subreddit]);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Mini Reddit</h1>
-      </header>
-          <aside>
-            <h2>My Account</h2>
-            <LogIn />
-          </aside>
-          <input
+      <form id='search-form'>
+       <input
+          type='search'
+          id='search-input'
           className='input'
           value = {subreddit}
           onChange={ e=>setSubreddit(e.target.value)}
           />
+
+        <button 
+          type="submit" 
+          className="search-button"
+          onClick={ e=>setSubreddit(e.target.value)}>
+          <img src={refresh} alt='click to refresh'className='refresh'/>
+        </button>
+        <img src={user} alt='account button' id='user'/>
+      </form>
+        <h1>Mini Reddit</h1>
           {
           (articles!=null)? articles.map((article, index)=> <Article key ={index} article ={article.data}/>): ''
-          (images!=null)? images.map((images)=> <Images href={images.data} />): ''
           }
     </div>
   );
