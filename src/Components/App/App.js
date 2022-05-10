@@ -2,7 +2,8 @@ import './App.css';
 import {React, useState, useEffect} from 'react';
 import Article from '../Articles/Article';
 import refresh from '../../pngegg.png';
-import user from '../../user.png';
+import User from '../User/user';
+
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <form id='search-form'>
+      <form className='search-form'>
        <input
           type='search'
           id='search-input'
@@ -35,21 +36,23 @@ function App() {
           value = {subreddit}
           onChange={ e=>setSubreddit(e.target.value)}
           />
-
         <button 
           type="submit" 
           className="search-button"
           onClick={ e=>setSubreddit(e.target.value)}>
-          <img src={refresh} alt='click to refresh'className='refresh'/>
+            <img src={refresh} alt='click to refresh' className='refresh'/>
         </button>
-        <img src={user} alt='account button' id='user'/>
+        <User />
       </form>
-        <h1>Mini Reddit</h1>
+      <h1>Mini Reddit</h1>
           {
           (articles!=null)? articles.map((article, index)=> <Article key ={index} article ={article.data}/>): ''
           }
+      
+      
+
     </div>
-  );
+  ); 
 }
 
 export default App;

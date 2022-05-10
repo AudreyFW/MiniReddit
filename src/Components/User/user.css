@@ -1,0 +1,18 @@
+#user{
+    max-width: 24px; 
+    max-height: 24px;
+    padding: 1em;
+    margin-left: 1em ;
+    border-radius: 1em;
+  }
+
+#user:active{
+    background-color: grey;
+
+}
+
+.button{
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}

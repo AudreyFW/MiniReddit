@@ -3,25 +3,21 @@ article{
     font-size: 13px;
     margin: 2em;
     padding: 2em;
-    background-color: #6f90803a;
-    border-radius: 0.2rem;
-    display: inline-block;
-    max-width: auto;
+    background-color:rgba(93, 89, 89, 0.619);
+    border-radius: 0.5rem;
 }
 
 a{
-    color:rgba(255, 255, 255, 0.838);
+    color:rgb(255, 255, 255);
     font-size: 16px;
 }
 
  p{
     color: rgb(213, 206, 206);
-    font-size: 14px;
-    align-content: center;
-    
+    font-size: 12px;
+    align-content: center;   
 }
 
 .author{
     color: grey
 }
-
