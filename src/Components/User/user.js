@@ -1,7 +1,5 @@
 import user from './user.png';
 import './user.css';
-import {Route, Router} from 'react-router-dom';
-import LogInForm from '../LogIn/LogInForm';
 
 import {Link} from 'react-router-dom';
 

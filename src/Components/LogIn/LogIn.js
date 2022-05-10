@@ -14,7 +14,7 @@ const LogIn =()=>{
     const Login= details=>{
         console.log(details);
 
-        if(details.email==adminUser.email && details.password == adminUser.password ){
+        if(details.email===adminUser.email && details.password === adminUser.password ){
             console.log('Logged in');
             setUser({
                 name:details.name,
@@ -48,7 +48,5 @@ const LogIn =()=>{
         </div>
     )
 }
-
-
 
 export default LogIn;
