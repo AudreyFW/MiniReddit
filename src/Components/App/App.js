@@ -3,6 +3,7 @@ import {React, useState, useEffect} from 'react';
 import Article from '../Articles/Article';
 import refresh from '../../pngegg.png';
 import User from '../User/user';
+import LogIn from '../LogIn/LogIn';
 
 
 
@@ -33,7 +34,7 @@ function App() {
           type='search'
           id='search-input'
           className='input'
-          value = {subreddit}
+          value={subreddit}
           onChange={ e=>setSubreddit(e.target.value)}
           />
         <button 
@@ -45,12 +46,11 @@ function App() {
         <User />
       </form>
       <h1>Mini Reddit</h1>
+      <LogIn />
           {
           (articles!=null)? articles.map((article, index)=> <Article key ={index} article ={article.data}/>): ''
           }
       
-      
-
     </div>
   ); 
 }

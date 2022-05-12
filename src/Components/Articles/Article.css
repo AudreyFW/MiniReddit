@@ -1,10 +1,10 @@
 article{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
-    margin: 2em;
+    margin: 3em;
     padding: 2em;
-    background-color:rgba(93, 89, 89, 0.619);
-    border-radius: 0.5rem;
+    background-color:#ff55003a;
+    border-radius: 0.2rem;
 }
 
 a{

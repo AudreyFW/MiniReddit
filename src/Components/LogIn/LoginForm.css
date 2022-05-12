@@ -1,0 +1,30 @@
+.form-inner{
+    margin-left: 3em;
+}
+
+.form-group{
+    margin-left: 3.5em;
+}
+
+label{
+    color: white;
+    font-weight: bolder;
+    margin-right: 1em;
+}
+
+input[type='text'],[type='password'],[type='email']{
+    font-style: italic;
+    font-size: x-small;
+    margin: 0.5em;
+    border-radius: 0.4em;
+    padding-left: 0.5em;
+}
+
+input[type='submit']{
+    background-color: #f64b0cf1;
+    color: white;
+    padding: 0.5em;
+    margin-left: 3rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+}

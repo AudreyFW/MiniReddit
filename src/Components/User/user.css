@@ -11,8 +11,8 @@
 
 }
 
-.button{
-    background-color: transparent;
+button{
+    background-color: black;
     border-style: none;
     cursor: pointer;
 }

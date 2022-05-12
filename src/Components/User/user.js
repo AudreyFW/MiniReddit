@@ -1,15 +1,19 @@
 import user from './user.png';
 import './user.css';
 
-import {Link} from 'react-router-dom';
 
 
-const User =()=>{
+
+const User = () => { 
+
+    function handleClick(e){
+        e.preventDefault(e);
+    }
         return ( 
         <div>
-        <Link to='/loginform'>
-            <img src={user} alt='account ' id='user'/>
-        </Link>
+            <button onClick={handleClick}>
+                <img src={user} alt='account ' id='user'/>
+            </button>
         </div>
         )
 }

@@ -39,7 +39,7 @@ const LogIn =()=>{
             {
             (user.email !=='')?(
                 <div className='welcome'>
-                    <h2>Welcome,<span>{user.name}</span> </h2>
+                    <h2>Welcome, <span>{user.name}</span> </h2>
                     <button onClick={logout}>Logout</button>
                 </div>
             ):
