@@ -1,7 +1,7 @@
 import './App.css';
 import {React, useState, useEffect} from 'react';
 import Article from '../Articles/Article';
-import refresh from '../../pngegg.png';
+import refresh from './pngegg.png';
 import User from '../User/user';
 import LogIn from '../LogIn/LogIn';
 

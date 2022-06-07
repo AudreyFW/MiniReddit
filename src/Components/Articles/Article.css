@@ -1,17 +1,24 @@
-article{
+article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     margin: 3em;
     padding: 2em;
-    background-color:#ff55003a;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
+    background: linear-gradient(to bottom right, hsla(16, 98%, 32%, 0.564),rgba(155, 155, 1, 0.517));
 }
 
 a{
+    text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 16px;
+    font-style: normal;
 }
 
+a :hover{
+    color: black;
+    text-decoration: none;
+
+}
  p{
     color: rgb(213, 206, 206);
     font-size: 12px;
@@ -19,5 +26,5 @@ a{
 }
 
 .author{
-    color: grey
+    color: rgb(162, 155, 155);
 }

@@ -5,6 +5,9 @@
 .form-group{
     margin-left: 3.5em;
 }
+form{
+    position: inherit;
+}
 
 label{
     color: white;
